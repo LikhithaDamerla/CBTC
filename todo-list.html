@@ -105,7 +105,8 @@ ul li::before{
     left: 8px;
  }
 ul li.checked{
-    color: rgb(0, 0, 0);
+    color: black;
+    text-decoration: line-through;
 }
 ul li.checked::before{
     background-image: url('https://www.howtoanalyzedata.net/wp-content/uploads/2020/10/Microsoft_To-Do_icon.png');
@@ -136,6 +137,20 @@ ul li span:hover{
     width: 3px;
     cursor: pointer;
     color: #ac1414;
+}
+@media(max-width:350px) {
+    .todo-app{
+        width: 330;
+        max-width:330px;
+    }
+    .row{
+       padding-left:8px ;
+    }
+    .row button{
+        font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 24px;
+    }
 }
     </style>
 </head>
