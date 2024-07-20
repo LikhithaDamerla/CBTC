@@ -71,8 +71,9 @@ nav ul li a:hover::after{
 }
 .text p{
     font-size: 20px;
-    font-weight: lighter;
-    font-family: Calibri,sans-serif,;
+}
+.text h1{
+    font-size: 70px;
 }
 /*........................................about................................*/
 #about{
@@ -185,15 +186,14 @@ div .c-m{
     padding-bottom: 30px;
     border-radius: 5px;
 }
-@media(max-width:500px) {
+nav .fas{
+    visibility: hidden;
+}
+@media(max-width:360px) {
     
-    #container{
-        height: 500px;
-        width: 500px;
-    }
     #header{
     padding: 20px 2%;
-}
+    }
      nav{
         display: flex;
         justify-content:space-evenly;
@@ -209,10 +209,18 @@ div .c-m{
     }
     .text{
         margin-right: 1px;
+        margin-top: 90%;
+       
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .text h1{
+        font-size: 50px;
     }
     .ig{
         height: 250px;
-        width: 200px;
+        width: 100px;
     }
     .sub-titles{
         visibility: hidden;
@@ -240,6 +248,15 @@ div .c-m{
     div .subtitle{
      visibility: visible;
 }
+.about-text{
+    width: 160px;
+    padding-right: 0px;
+}
+.container1{
+    width: 350px;
+    
+}
+
 
 }
 
@@ -250,13 +267,15 @@ div .c-m{
     <div id="container">
         <div id="header">
         <nav>
-            <img class="logo" src="https://res.cloudinary.com/dryoslc8v/image/upload/v1721455708/ggxpzs1qtymt70ro1bny.jpg" alt="logo">
+            <img class="logo" src="https://res.cloudinary.com/dryoslc8v/image/upload/v1721383919/logo_ogljkb.jpg" alt="logo">
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#container1">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-bars"></i>
             </ul>
+            <i class="fas fa-bars"></i>
         </nav>
         <div class="text">
             <p>Web development</p>
@@ -268,7 +287,7 @@ div .c-m{
         <div id="about">
             <div class="empty">
             <div class="about-img">
-                <img src="https://res.cloudinary.com/dryoslc8v/image/upload/v1721456312/o187oxpspt1qlpfolix8.png" class="ig">
+                <img src="https://res.cloudinary.com/dryoslc8v/image/upload/v1721385236/zmwst9csjg28uhxuuggb.png" class="ig">
                 <br><br>
                 <span>
                     <div style="position: relative; ">
