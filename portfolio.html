@@ -123,6 +123,12 @@ nav ul li a:hover::after{
 div ul li{
     list-style:square;
 }
+div ol li{
+    visibility: hidden;
+}
+div .subtitle{
+    visibility: hidden;
+}
 /*...........................................services..............................*/
 #services{
     padding: 30px 0;
@@ -179,7 +185,63 @@ div .c-m{
     padding-bottom: 30px;
     border-radius: 5px;
 }
+@media(max-width:500px) {
+    
+    #container{
+        height: 500px;
+        width: 500px;
+    }
+    #header{
+    padding: 20px 2%;
+}
+     nav{
+        display: flex;
+        justify-content:space-evenly;
+     }
+    .logo{
+        height: 50px;
+        width: 60px;
+        padding-left: 0%;
+    }
+     nav ul li{
+        margin: 10px;
+        
+    }
+    .text{
+        margin-right: 1px;
+    }
+    .ig{
+        height: 250px;
+        width: 200px;
+    }
+    .sub-titles{
+        visibility: hidden;
+    }
+    #about div ul li{
+        visibility: hidden;
+    }
+    .contact-detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        visibility: hidden;
+    }
+    
+    .contactus h1{
+        padding-left: 50px;
+    }
+    br{
+        visibility: hidden;
+    }
+    div ol li{
+    visibility: visible;
+}
+    div .subtitle{
+     visibility: visible;
+}
 
+}
 
 
     </style>
@@ -207,6 +269,17 @@ div .c-m{
             <div class="empty">
             <div class="about-img">
                 <img src="https://res.cloudinary.com/dryoslc8v/image/upload/v1721385236/zmwst9csjg28uhxuuggb.png" class="ig">
+                <br><br>
+                <span>
+                    <div style="position: relative; ">
+                        <p class="subtitle" style="font-weight: 300px;text-decoration: underline #f5cf34; text-decoration-thickness:3px;
+                        text-underline-offset: 5px;">Skills<br></p><br>
+                    <ol style="list-style-type: square;">
+                        <li>wed developement</li><br>
+                        <li>UI/UX</li><br>
+                        <li>Good at Communication</li>
+                    </ol></div>
+                </span>
             </div>
             <div class="about-text">
                 <h2 style="font-size: 35px; text-shadow: 2px 1.5px 4px #ffffff"><span style="color: #f5cf34;text-shadow: 2px 1.5px 4px #f5cf34">A</span>bout Me</h2>
@@ -220,7 +293,7 @@ div .c-m{
                         <li>UI/UX</li><br>
                         <li>Good at Communication</li>
                     </ul></div>
-                    <div class="sub-titles">
+                <div class="sub-titles">
                         <p class="subtitle1">Education<br></p></div>
                         <div><ul>
                             <li>2021-2025 - B.Tech, St.Marys Womens Enginnering college (CGPA-8.034)</li><br>
@@ -250,7 +323,7 @@ div .c-m{
         </div>
         </div>
  </div>
-<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
  <div id="contact">
     <div class="empty">
     <div class="contact-detail">
@@ -269,7 +342,7 @@ div .c-m{
         </div></div>
     </div>
     <div class="img">
-         <img src="https://res.cloudinary.com/dryoslc8v/image/upload/v1721386205/nwkscofjuroirfsh9syc.jpg" style="height: 300px; width: 450px; border-radius: 100%; ">
+         <img src="https://res.cloudinary.com/dryoslc8v/image/upload/v1721386205/nwkscofjuroirfsh9syc.jpg" style="height: 300px; width: 450px; border-radius: 100%; " class="ii">
     </div>
     </div>
     </div>
